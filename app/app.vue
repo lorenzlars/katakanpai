@@ -1,48 +1,43 @@
 <template>
   <UApp>
-    <UContainer>
-      <div class="flex flex-col justify-center items-center gap-3 max-w-80">
-        <h1 class="text-secondary text-5xl">
-          Kata<span class="font-bold">kanpai</span>
-        </h1>
+    <div class="mx-auto flex flex-col justify-center items-center gap-3 sm:max-w-screen-sm p-6">
+      <h1 class="text-secondary text-5xl font-light">
+        Kata<span class="font-bold">kanpai</span>
+      </h1>
 
-
-
-        <div class="h-16">
-          <HyperText :text="activeWord?.katakana ?? ' '" class="text-4xl font-bold" :duration="800"
-            :animate-on-load="true" />
-        </div>
-
-        <div class="h-30 w-full">
-          <UCard class="h-full flex justify-center items-center" variant="subtle">
-            <p v-if="showAnswer" class="text-3xl">{{ activeWord?.brand }}</p>
-          </UCard>
-        </div>
-
-        <UProgress v-model="progress" />
-
-        <UButton @click="startGame" size="xl" class="w-full justify-center" variant="outline">
-          {{ isActive ? 'Reveal' : 'Start' }}
-        </UButton>
-
-        <UModal title="Settings">
-          <UButton label="Settings" color="neutral" variant="ghost" icon="i-lucide-cog" class="mt-12" />
-
-          <template #body>
-            <div class="flex gap-6">
-              <UFormField label="Difficulty" name="level" class="w-full">
-                <USelect v-model="level" :items="levels" class="w-full" />
-              </UFormField>
-
-              <UFormField label="Seconds to guess" name="seconds" class="w-full">
-                <UInput v-model="seconds" type="number" class="w-full" />
-              </UFormField>
-            </div>
-          </template>
-        </UModal>
+      <div class="h-16">
+        <HyperText :text="activeWord?.katakana ?? ' '" class="text-4xl font-bold" :duration="800"
+          :animate-on-load="true" />
       </div>
-    </UContainer>
 
+      <div class="h-30 w-full">
+        <UCard class="h-full flex justify-center items-center" variant="subtle">
+          <p v-if="showAnswer" class="text-3xl">{{ activeWord?.brand }}</p>
+        </UCard>
+      </div>
+
+      <UProgress v-model="progress" />
+
+      <UButton @click="startGame" size="xl" class="w-full justify-center" variant="outline">
+        {{ isActive ? 'Reveal' : 'Start' }}
+      </UButton>
+
+      <UModal title="Settings">
+        <UButton label="Settings" color="neutral" variant="ghost" icon="i-lucide-cog" class="mt-12" />
+
+        <template #body>
+          <div class="flex gap-6">
+            <UFormField label="Difficulty" name="level" class="w-full">
+              <USelect v-model="level" :items="levels" class="w-full" />
+            </UFormField>
+
+            <UFormField label="Seconds to guess" name="seconds" class="w-full">
+              <UInput v-model="seconds" type="number" class="w-full" />
+            </UFormField>
+          </div>
+        </template>
+      </UModal>
+    </div>
   </UApp>
 </template>
 
