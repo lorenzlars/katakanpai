@@ -29,6 +29,9 @@ importers:
       vue-router:
         specifier: ^4.6.3
         version: 4.6.3(vue@3.5.22(typescript@5.9.3))
+      wanakana:
+        specifier: ^5.3.1
+        version: 5.3.1
     devDependencies:
       '@tailwindcss/vite':
         specifier: ^4.1.16
@@ -3710,6 +3713,10 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  wanakana@5.3.1:
+    resolution: {integrity: sha512-OSDqupzTlzl2LGyqTdhcXcl6ezMiFhcUwLBP8YKaBIbMYW1wAwDvupw2T9G9oVaKT9RmaSpyTXjxddFPUcFFIw==}
+    engines: {node: '>=12'}
 
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
@@ -7910,6 +7917,8 @@ snapshots:
       '@vue/shared': 3.5.22
     optionalDependencies:
       typescript: 5.9.3
+
+  wanakana@5.3.1: {}
 
   webidl-conversions@3.0.1: {}
 

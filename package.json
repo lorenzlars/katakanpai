@@ -16,7 +16,8 @@
     "motion-v": "^1.7.4",
     "nuxt": "^4.2.0",
     "vue": "^3.5.22",
-    "vue-router": "^4.6.3"
+    "vue-router": "^4.6.3",
+    "wanakana": "^5.3.1"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.16",

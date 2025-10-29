@@ -1,6 +1,6 @@
 <template>
   <UApp>
-    <div class="mx-auto flex flex-col justify-center items-center gap-3 sm:max-w-screen-sm p-6">
+    <div class="mx-auto flex flex-col justify-center items-center gap-3 sm:max-w-screen-sm pt-6 px-6 sm:px-0">
       <h1 class="text-secondary text-5xl font-light">
         Kata<span class="font-bold">kanpai</span>
       </h1>
@@ -10,10 +10,10 @@
           :animate-on-load="true" />
       </div>
 
-      <div class="h-30 w-full">
-        <UCard class="h-full flex justify-center items-center" variant="subtle">
-          <p v-if="showAnswer" class="text-3xl">{{ activeWord?.brand }}</p>
-        </UCard>
+      <div
+        class="h-30 w-full flex flex-col justify-center items-center rounded-lg overflow-hidden bg-elevated/50 ring ring-default divide-y divide-default">
+        <p v-if="showAnswer" class="text-3xl">{{ activeWord?.brand }}</p>
+        <p v-if="showAnswer">({{ romaji }})</p>
       </div>
 
       <UProgress v-model="progress" />
@@ -42,6 +42,7 @@
 </template>
 
 <script setup lang="ts">
+import { toRomaji } from 'wanakana'
 type Levels = keyof typeof brands
 
 const TICKS_PER_SECOND = 10
@@ -56,7 +57,7 @@ const seconds = shallowRef(10)
 const interval = computed(() => seconds.value * TICKS_PER_SECOND)
 const level = shallowRef<Levels>('easy')
 const progress = shallowRef(100)
-const settingsVisible = shallowRef(false)
+const romaji = computed(() => toRomaji(activeWord.value?.katakana))
 
 const brands = {
   easy: [
