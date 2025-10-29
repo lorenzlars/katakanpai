@@ -1,5 +1,5 @@
 <template>
-    <div class="flex scale-100 cursor-default overflow-hidden py-2" @mouseenter="triggerAnimation">
+    <div class="flex scale-100 cursor-default overflow-hidden py-2">
         <div class="flex">
             <Motion v-for="(letter, i) in displayText" :key="i" as="span" :class="letter === ' ' ? 'w-3' : ''"
                 class="inline-block font-mono" :initial="{ opacity: 0, y: -10 }" :animate="{ opacity: 1, y: 0 }"
@@ -16,7 +16,6 @@ import { Motion } from "motion-v";
 
 const props = withDefaults(
     defineProps<{
-        class?: HTMLAttributes["class"];
         text: string;
         duration?: number;
         animateOnLoad: boolean;

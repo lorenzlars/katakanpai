@@ -1,27 +1,44 @@
 <template>
   <UApp>
-    <UContainer class="container">
-      <div class="flex justify-center items-center text-center h-vh">
-        <div>
-          <UButton @click="startGame">
-            {{ isPending ? 'Reveal' : 'Start' }}
-          </UButton>
+    <UContainer>
+      <div class="flex flex-col justify-center items-center gap-3 max-w-80">
+        <h1 class="text-secondary text-5xl">
+          Kata<span class="font-bold">kanpai</span>
+        </h1>
 
+        <UInput v-model="seconds" />
+        <USelect v-model="level" :items="levels" />
+
+        <div class="h-16">
           <HyperText :text="activeWord?.katakana ?? ' '" class="text-4xl font-bold" :duration="800"
             :animate-on-load="true" />
-
-          <p v-if="showAwenser">
-            {{ activeWord?.brand }}
-          </p>
         </div>
+
+        <div class="h-30 w-full">
+          <UCard class="h-full flex justify-center items-center" variant="subtle">
+            <p v-if="showAnswer" class="text-3xl">{{ activeWord?.brand }}</p>
+          </UCard>
+        </div>
+
+        <UProgress v-model="progress" />
+
+        <UButton @click="startGame" size="xl" class="w-full justify-center" variant="outline">
+          {{ isActive ? 'Reveal' : 'Start' }}
+        </UButton>
       </div>
     </UContainer>
   </UApp>
 </template>
 
 <script setup lang="ts">
-const showAwenser = shallowRef(false)
+const TICKS_PER_SECOND = 10
+const showAnswer = shallowRef(false)
 const activeWord = shallowRef<(typeof brands)[0]>()
+const levels = ['Easy', 'Solid', 'Hard']
+const seconds = shallowRef(10)
+const interval = computed(() => seconds.value * TICKS_PER_SECOND)
+const level = shallowRef()
+const progress = shallowRef(100)
 
 const brands = [
   { brand: "Apple", katakana: "アップル" },
@@ -136,23 +153,24 @@ const brands = [
   { brand: "Uniqlo", katakana: "ユニクロ" }
 ]
 
-const { isPending, start, stop } = useTimeoutFn(() => {
-  showAwenser.value = true
-}, 10_000, { immediate: false })
+const { isActive, remaining, start, stop, pause, resume } = useCountdown(interval, {
+  onComplete() {
+    showAnswer.value = true
+  },
+  onTick() {
+    progress.value = 100 / interval.value * remaining.value
+  },
+  interval: 1_000 / TICKS_PER_SECOND
+})
 
 function startGame() {
-  if (isPending.value) {
+  if (isActive.value) {
     stop()
-    showAwenser.value = true
+    showAnswer.value = true
   } else {
-    showAwenser.value = false
+    showAnswer.value = false
     activeWord.value = brands[Math.floor(Math.random() * brands.length)]
     start()
   }
-}
-
-function revealAwenser() {
-  showAwenser.value = true
-  stop()
 }
 </script>
