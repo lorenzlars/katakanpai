@@ -4,7 +4,7 @@
             <Motion v-for="(letter, i) in displayText" :key="i" as="span" :class="letter === ' ' ? 'w-3' : ''"
                 class="inline-block font-mono" :initial="{ opacity: 0, y: -10 }" :animate="{ opacity: 1, y: 0 }"
                 :delay="i * (duration / (text.length * 10))">
-                {{ letter.toUpperCase() }}
+                {{ letter?.toUpperCase() }}
             </Motion>
         </div>
     </div>
@@ -26,7 +26,7 @@ const props = withDefaults(
 );
 
 const alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const displayText = ref(props.text.split(""));
+const displayText = ref<(string | undefined)[]>(props.text.split(""));
 const iterations = ref(0);
 
 function getRandomLetter() {
