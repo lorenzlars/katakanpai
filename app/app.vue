@@ -13,7 +13,7 @@
       <div
         class="h-30 w-full flex flex-col justify-center items-center rounded-lg overflow-hidden bg-elevated/50 ring ring-default divide-y divide-default">
         <p v-if="showAnswer" class="text-3xl">{{ activeWord?.brand }}</p>
-        <p v-if="showAnswer">({{ romaji }})</p>
+        <p v-if="(showAnswer || fluffy) && romaji" class="text-gray-400"><em>{{ romaji }}</em></p>
       </div>
 
       <UProgress v-model="progress" />
@@ -23,20 +23,27 @@
       </UButton>
 
       <UModal title="Settings">
-        <UButton label="Settings" color="neutral" variant="ghost" icon="i-lucide-cog" class="mt-12" />
+        <UButton label="Settings" color="neutral" variant="ghost" class="mt-12" />
 
         <template #body>
-          <div class="flex gap-6">
-            <UFormField label="Difficulty" name="level" class="w-full">
-              <USelect v-model="level" :items="levels" class="w-full" />
-            </UFormField>
+          <div class="flex flex-col gap-6">
+            <div class="flex gap-6">
+              <UFormField label="Difficulty" name="level" class="w-full">
+                <USelect v-model="level" :items="levels" class="w-full" />
+              </UFormField>
 
-            <UFormField label="Seconds to guess" name="seconds" class="w-full">
-              <UInput v-model="seconds" type="number" class="w-full" />
+              <UFormField label="Seconds to guess" name="seconds" class="w-full">
+                <UInput v-model="seconds" type="number" class="w-full" />
+              </UFormField>
+            </div>
+
+            <UFormField name="fluffy" class="w-full">
+              <UCheckbox label="Fluffy mode" v-model="fluffy" />
             </UFormField>
           </div>
         </template>
       </UModal>
+      <a href="https://larslorenz.dev/" class="text-gray-700"><small><em>by larslorenz.dev</em></small></a>
     </div>
   </UApp>
 </template>
@@ -53,11 +60,21 @@ const levels: { label: string, value: Levels }[] = [
   { label: 'Normal', value: 'normal' },
   { label: 'Hard', value: 'hard' },
 ]
-const seconds = shallowRef(10)
+const seconds = shallowRef(15)
 const interval = computed(() => seconds.value * TICKS_PER_SECOND)
 const level = shallowRef<Levels>('easy')
-const progress = shallowRef(100)
-const romaji = computed(() => toRomaji(activeWord.value?.katakana))
+const progress = shallowRef(0)
+const fluffy = shallowRef(false)
+const fullRomaji = computed(() => toRomaji(activeWord.value?.katakana))
+const romaji = computed(() => {
+  if (!fullRomaji.value || !isActive.value) return fullRomaji.value
+
+  const totalChars = fullRomaji.value.length
+  const progressRatio = (interval.value - remaining.value) / interval.value
+  const charsToShow = Math.floor(progressRatio * totalChars)
+
+  return fullRomaji.value.slice(0, charsToShow)
+})
 
 const brands = {
   easy: [
