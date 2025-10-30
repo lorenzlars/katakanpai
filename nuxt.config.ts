@@ -12,5 +12,13 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@nuxt/ui',
-  ]
+  ],
+  app: {
+    head: {
+      title: 'Katakanpai',
+      meta: [
+        { name: 'description', content: 'A fun drinking game where you guess brand names from katakana characters. Test your Japanese reading skills and enjoy with friends!' }
+      ]
+    }
+  }
 })
