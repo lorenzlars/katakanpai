@@ -17,5 +17,8 @@ export default defineNuxtConfig({
         { name: 'description', content: 'A fun drinking game where you guess brand names from katakana characters. Test your Japanese reading skills and enjoy with friends!' }
       ]
     }
+  },
+  nitro: {
+    preset: 'vercel',
   }
 })
