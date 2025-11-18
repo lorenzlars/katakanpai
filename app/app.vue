@@ -50,14 +50,10 @@ const romaji = computed(() => {
 
 const options = shallowRef([])
 
-const levels: Record<Level, Function> = {
-  easy: () => import(`~/assets/levels/easy.json`),
-  normal: () => import(`~/assets/levels/normal.json`),
-  hard: () => import(`~/assets/levels/hard.json`)
-}
+const levels: Record<string, Function> = import.meta.glob('~/assets/levels/*.json')
 
 watch(level, async (newLevel: Level) => {
-  const resolver = levels[newLevel]
+  const resolver = levels[`/assets/levels/${newLevel}.json`]
 
   if (resolver) {
     const brands = await resolver()
