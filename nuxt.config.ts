@@ -9,10 +9,7 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
-  modules: [
-    '@vueuse/nuxt',
-    '@nuxt/ui',
-  ],
+  modules: ['@vueuse/nuxt', '@nuxt/ui', '@pinia/nuxt'],
   app: {
     head: {
       title: 'Katakanpai',

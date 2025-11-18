@@ -1,0 +1,154 @@
+[
+    {
+        "brand": "Apple",
+        "katakana": "アップル"
+    },
+    {
+        "brand": "Google",
+        "katakana": "グーグル"
+    },
+    {
+        "brand": "Amazon",
+        "katakana": "アマゾン"
+    },
+    {
+        "brand": "Samsung",
+        "katakana": "サムスン"
+    },
+    {
+        "brand": "Twitter",
+        "katakana": "ツイッター"
+    },
+    {
+        "brand": "Uber",
+        "katakana": "ウーバー"
+    },
+    {
+        "brand": "PayPal",
+        "katakana": "ペイパル"
+    },
+    {
+        "brand": "eBay",
+        "katakana": "イーベイ"
+    },
+    {
+        "brand": "Alibaba",
+        "katakana": "アリババ"
+    },
+    {
+        "brand": "Baidu",
+        "katakana": "バイドゥ"
+    },
+    {
+        "brand": "WeChat",
+        "katakana": "ウィーチャット"
+    },
+    {
+        "brand": "Slack",
+        "katakana": "スラック"
+    },
+    {
+        "brand": "Skype",
+        "katakana": "スカイプ"
+    },
+    {
+        "brand": "Gmail",
+        "katakana": "ジーメール"
+    },
+    {
+        "brand": "Yahoo",
+        "katakana": "ヤフー"
+    },
+    {
+        "brand": "Firefox",
+        "katakana": "ファイアフォックス"
+    },
+    {
+        "brand": "Chrome",
+        "katakana": "クローム"
+    },
+    {
+        "brand": "Safari",
+        "katakana": "サファリ"
+    },
+    {
+        "brand": "Mercedes",
+        "katakana": "メルセデス"
+    },
+    {
+        "brand": "Audi",
+        "katakana": "アウディ"
+    },
+    {
+        "brand": "Ford",
+        "katakana": "フォード"
+    },
+    {
+        "brand": "Ferrari",
+        "katakana": "フェラーリ"
+    },
+    {
+        "brand": "Porsche",
+        "katakana": "ポルシェ"
+    },
+    {
+        "brand": "Jaguar",
+        "katakana": "ジャガー"
+    },
+    {
+        "brand": "Bentley",
+        "katakana": "ベントレー"
+    },
+    {
+        "brand": "Maserati",
+        "katakana": "マセラティ"
+    },
+    {
+        "brand": "Bugatti",
+        "katakana": "ブガッティ"
+    },
+    {
+        "brand": "Hyundai",
+        "katakana": "ヒュンダイ"
+    },
+    {
+        "brand": "Nissan",
+        "katakana": "ニッサン"
+    },
+    {
+        "brand": "Daihatsu",
+        "katakana": "ダイハツ"
+    },
+    {
+        "brand": "Peugeot",
+        "katakana": "プジョー"
+    },
+    {
+        "brand": "Renault",
+        "katakana": "ルノー"
+    },
+    {
+        "brand": "Lancia",
+        "katakana": "ランチア"
+    },
+    {
+        "brand": "Škoda",
+        "katakana": "シュコダ"
+    },
+    {
+        "brand": "Holden",
+        "katakana": "ホールデン"
+    },
+    {
+        "brand": "Dior",
+        "katakana": "ディオール"
+    },
+    {
+        "brand": "Versace",
+        "katakana": "ヴェルサーチ"
+    },
+    {
+        "brand": "Armani",
+        "katakana": "アルマーニ"
+    }
+]

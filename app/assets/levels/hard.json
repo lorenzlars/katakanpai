@@ -1,0 +1,190 @@
+[
+    {
+        "brand": "Microsoft",
+        "katakana": "マイクロソフト"
+    },
+    {
+        "brand": "Facebook",
+        "katakana": "フェイスブック"
+    },
+    {
+        "brand": "Netflix",
+        "katakana": "ネットフリックス"
+    },
+    {
+        "brand": "Adidas",
+        "katakana": "アディダス"
+    },
+    {
+        "brand": "Nintendo",
+        "katakana": "ニンテンドー"
+    },
+    {
+        "brand": "PlayStation",
+        "katakana": "プレイステーション"
+    },
+    {
+        "brand": "Xbox",
+        "katakana": "エックスボックス"
+    },
+    {
+        "brand": "YouTube",
+        "katakana": "ユーチューブ"
+    },
+    {
+        "brand": "Instagram",
+        "katakana": "インスタグラム"
+    },
+    {
+        "brand": "TikTok",
+        "katakana": "ティックトック"
+    },
+    {
+        "brand": "WhatsApp",
+        "katakana": "ワッツアップ"
+    },
+    {
+        "brand": "Snapchat",
+        "katakana": "スナップチャット"
+    },
+    {
+        "brand": "LinkedIn",
+        "katakana": "リンクトイン"
+    },
+    {
+        "brand": "Airbnb",
+        "katakana": "エアビーアンドビー"
+    },
+    {
+        "brand": "Spotify",
+        "katakana": "スポティファイ"
+    },
+    {
+        "brand": "Discord",
+        "katakana": "ディスコード"
+    },
+    {
+        "brand": "Dropbox",
+        "katakana": "ドロップボックス"
+    },
+    {
+        "brand": "OneDrive",
+        "katakana": "ワンドライブ"
+    },
+    {
+        "brand": "iCloud",
+        "katakana": "アイクラウド"
+    },
+    {
+        "brand": "Coca-Cola",
+        "katakana": "コカコーラ"
+    },
+    {
+        "brand": "McDonald's",
+        "katakana": "マクドナルド"
+    },
+    {
+        "brand": "Burger King",
+        "katakana": "バーガーキング"
+    },
+    {
+        "brand": "Starbucks",
+        "katakana": "スターバックス"
+    },
+    {
+        "brand": "Subway",
+        "katakana": "サブウェイ"
+    },
+    {
+        "brand": "Pizza Hut",
+        "katakana": "ピザハット"
+    },
+    {
+        "brand": "BMW",
+        "katakana": "ビーエムダブリュー"
+    },
+    {
+        "brand": "Volkswagen",
+        "katakana": "フォルクスワーゲン"
+    },
+    {
+        "brand": "Lamborghini",
+        "katakana": "ランボルギーニ"
+    },
+    {
+        "brand": "Rolls-Royce",
+        "katakana": "ロールスロイス"
+    },
+    {
+        "brand": "McLaren",
+        "katakana": "マクラーレン"
+    },
+    {
+        "brand": "Mitsubishi",
+        "katakana": "ミツビシ"
+    },
+    {
+        "brand": "Citroën",
+        "katakana": "シトロエン"
+    },
+    {
+        "brand": "Alfa Romeo",
+        "katakana": "アルファロメオ"
+    },
+    {
+        "brand": "Vauxhall",
+        "katakana": "ボクソール"
+    },
+    {
+        "brand": "Louis Vuitton",
+        "katakana": "ルイヴィトン"
+    },
+    {
+        "brand": "Calvin Klein",
+        "katakana": "カルバンクライン"
+    },
+    {
+        "brand": "Tommy Hilfiger",
+        "katakana": "トミーヒルフィガー"
+    },
+    {
+        "brand": "Ralph Lauren",
+        "katakana": "ラルフローレン"
+    },
+    {
+        "brand": "Hugo Boss",
+        "katakana": "ヒューゴボス"
+    },
+    {
+        "brand": "H&M",
+        "katakana": "エイチアンドエム"
+    },
+    {
+        "brand": "Mastercard",
+        "katakana": "マスターカード"
+    },
+    {
+        "brand": "American Express",
+        "katakana": "アメリカンエクスプレス"
+    },
+    {
+        "brand": "Goldman Sachs",
+        "katakana": "ゴールドマンサックス"
+    },
+    {
+        "brand": "Bank of America",
+        "katakana": "バンクオブアメリカ"
+    },
+    {
+        "brand": "Wells Fargo",
+        "katakana": "ウェルズファーゴ"
+    },
+    {
+        "brand": "Deutsche Bank",
+        "katakana": "ドイツ銀行"
+    },
+    {
+        "brand": "Barclays",
+        "katakana": "バークレイズ"
+    }
+]
