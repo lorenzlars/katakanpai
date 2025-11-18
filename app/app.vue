@@ -31,6 +31,7 @@
 
 <script setup lang="ts">
 import { toRomaji } from 'wanakana'
+import type { Level } from './types';
 
 const { interval, level, fluffy } = storeToRefs(useSettingsStore())
 const showAnswer = shallowRef(false)
@@ -49,9 +50,21 @@ const romaji = computed(() => {
 
 const options = shallowRef([])
 
-watch(level, async (newLevel) => {
-  const brands = await import(`~/assets/levels/${newLevel}.json`)
-  options.value = brands.default
+const levels: Record<Level, Function> = {
+  easy: () => import(`~/assets/levels/easy.json`),
+  normal: () => import(`~/assets/levels/normal.json`),
+  hard: () => import(`~/assets/levels/hard.json`)
+}
+
+watch(level, async (newLevel: Level) => {
+  const resolver = levels[newLevel]
+
+  if (resolver) {
+    const brands = await resolver()
+
+    options.value = brands.default
+  }
+
 }, { immediate: true })
 
 const { isActive, remaining, start, stop } = useCountdown(interval, {

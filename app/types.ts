@@ -1,1 +1,1 @@
-export type Levels = 'easy' | 'normal' | 'hard'
+export type Level = 'easy' | 'normal' | 'hard'

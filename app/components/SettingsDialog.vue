@@ -23,9 +23,9 @@
 </template>
 
 <script lang="ts" setup>
-import type { Levels } from '~/types';
+import type { Level } from '~/types';
 
-const levels: { label: string, value: Levels }[] = [
+const levels: { label: string, value: Level }[] = [
     { label: 'Easy', value: 'easy' },
     { label: 'Normal', value: 'normal' },
     { label: 'Hard', value: 'hard' },
