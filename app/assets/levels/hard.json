@@ -1,190 +1,190 @@
 [
     {
-        "brand": "Microsoft",
+        "latin": "Microsoft",
         "katakana": "マイクロソフト"
     },
     {
-        "brand": "Facebook",
+        "latin": "Facebook",
         "katakana": "フェイスブック"
     },
     {
-        "brand": "Netflix",
+        "latin": "Netflix",
         "katakana": "ネットフリックス"
     },
     {
-        "brand": "Adidas",
+        "latin": "Adidas",
         "katakana": "アディダス"
     },
     {
-        "brand": "Nintendo",
+        "latin": "Nintendo",
         "katakana": "ニンテンドー"
     },
     {
-        "brand": "PlayStation",
+        "latin": "PlayStation",
         "katakana": "プレイステーション"
     },
     {
-        "brand": "Xbox",
+        "latin": "Xbox",
         "katakana": "エックスボックス"
     },
     {
-        "brand": "YouTube",
+        "latin": "YouTube",
         "katakana": "ユーチューブ"
     },
     {
-        "brand": "Instagram",
+        "latin": "Instagram",
         "katakana": "インスタグラム"
     },
     {
-        "brand": "TikTok",
+        "latin": "TikTok",
         "katakana": "ティックトック"
     },
     {
-        "brand": "WhatsApp",
+        "latin": "WhatsApp",
         "katakana": "ワッツアップ"
     },
     {
-        "brand": "Snapchat",
+        "latin": "Snapchat",
         "katakana": "スナップチャット"
     },
     {
-        "brand": "LinkedIn",
+        "latin": "LinkedIn",
         "katakana": "リンクトイン"
     },
     {
-        "brand": "Airbnb",
+        "latin": "Airbnb",
         "katakana": "エアビーアンドビー"
     },
     {
-        "brand": "Spotify",
+        "latin": "Spotify",
         "katakana": "スポティファイ"
     },
     {
-        "brand": "Discord",
+        "latin": "Discord",
         "katakana": "ディスコード"
     },
     {
-        "brand": "Dropbox",
+        "latin": "Dropbox",
         "katakana": "ドロップボックス"
     },
     {
-        "brand": "OneDrive",
+        "latin": "OneDrive",
         "katakana": "ワンドライブ"
     },
     {
-        "brand": "iCloud",
+        "latin": "iCloud",
         "katakana": "アイクラウド"
     },
     {
-        "brand": "Coca-Cola",
+        "latin": "Coca-Cola",
         "katakana": "コカコーラ"
     },
     {
-        "brand": "McDonald's",
+        "latin": "McDonald's",
         "katakana": "マクドナルド"
     },
     {
-        "brand": "Burger King",
+        "latin": "Burger King",
         "katakana": "バーガーキング"
     },
     {
-        "brand": "Starbucks",
+        "latin": "Starbucks",
         "katakana": "スターバックス"
     },
     {
-        "brand": "Subway",
+        "latin": "Subway",
         "katakana": "サブウェイ"
     },
     {
-        "brand": "Pizza Hut",
+        "latin": "Pizza Hut",
         "katakana": "ピザハット"
     },
     {
-        "brand": "BMW",
+        "latin": "BMW",
         "katakana": "ビーエムダブリュー"
     },
     {
-        "brand": "Volkswagen",
+        "latin": "Volkswagen",
         "katakana": "フォルクスワーゲン"
     },
     {
-        "brand": "Lamborghini",
+        "latin": "Lamborghini",
         "katakana": "ランボルギーニ"
     },
     {
-        "brand": "Rolls-Royce",
+        "latin": "Rolls-Royce",
         "katakana": "ロールスロイス"
     },
     {
-        "brand": "McLaren",
+        "latin": "McLaren",
         "katakana": "マクラーレン"
     },
     {
-        "brand": "Mitsubishi",
+        "latin": "Mitsubishi",
         "katakana": "ミツビシ"
     },
     {
-        "brand": "Citroën",
+        "latin": "Citroën",
         "katakana": "シトロエン"
     },
     {
-        "brand": "Alfa Romeo",
+        "latin": "Alfa Romeo",
         "katakana": "アルファロメオ"
     },
     {
-        "brand": "Vauxhall",
+        "latin": "Vauxhall",
         "katakana": "ボクソール"
     },
     {
-        "brand": "Louis Vuitton",
+        "latin": "Louis Vuitton",
         "katakana": "ルイヴィトン"
     },
     {
-        "brand": "Calvin Klein",
+        "latin": "Calvin Klein",
         "katakana": "カルバンクライン"
     },
     {
-        "brand": "Tommy Hilfiger",
+        "latin": "Tommy Hilfiger",
         "katakana": "トミーヒルフィガー"
     },
     {
-        "brand": "Ralph Lauren",
+        "latin": "Ralph Lauren",
         "katakana": "ラルフローレン"
     },
     {
-        "brand": "Hugo Boss",
+        "latin": "Hugo Boss",
         "katakana": "ヒューゴボス"
     },
     {
-        "brand": "H&M",
+        "latin": "H&M",
         "katakana": "エイチアンドエム"
     },
     {
-        "brand": "Mastercard",
+        "latin": "Mastercard",
         "katakana": "マスターカード"
     },
     {
-        "brand": "American Express",
+        "latin": "American Express",
         "katakana": "アメリカンエクスプレス"
     },
     {
-        "brand": "Goldman Sachs",
+        "latin": "Goldman Sachs",
         "katakana": "ゴールドマンサックス"
     },
     {
-        "brand": "Bank of America",
+        "latin": "Bank of America",
         "katakana": "バンクオブアメリカ"
     },
     {
-        "brand": "Wells Fargo",
+        "latin": "Wells Fargo",
         "katakana": "ウェルズファーゴ"
     },
     {
-        "brand": "Deutsche Bank",
+        "latin": "Deutsche Bank",
         "katakana": "ドイツ銀行"
     },
     {
-        "brand": "Barclays",
+        "latin": "Barclays",
         "katakana": "バークレイズ"
     }
 ]

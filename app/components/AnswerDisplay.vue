@@ -1,7 +1,7 @@
 <template>
     <div
         class="h-30 w-full flex flex-col justify-center items-center rounded-lg overflow-hidden bg-elevated/50 ring ring-default divide-y divide-default">
-        <p v-if="show" class="text-3xl">{{ brand?.brand }}</p>
+        <p v-if="show" class="text-3xl">{{ brand?.latin }}</p>
         <p v-if="show || fluffy" class="text-gray-400"><em>{{ visibleRomaji }}</em></p>
     </div>
 </template>

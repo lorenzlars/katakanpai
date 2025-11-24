@@ -1,154 +1,154 @@
 [
     {
-        "brand": "Apple",
+        "latin": "Apple",
         "katakana": "アップル"
     },
     {
-        "brand": "Google",
+        "latin": "Google",
         "katakana": "グーグル"
     },
     {
-        "brand": "Amazon",
+        "latin": "Amazon",
         "katakana": "アマゾン"
     },
     {
-        "brand": "Samsung",
+        "latin": "Samsung",
         "katakana": "サムスン"
     },
     {
-        "brand": "Twitter",
+        "latin": "Twitter",
         "katakana": "ツイッター"
     },
     {
-        "brand": "Uber",
+        "latin": "Uber",
         "katakana": "ウーバー"
     },
     {
-        "brand": "PayPal",
+        "latin": "PayPal",
         "katakana": "ペイパル"
     },
     {
-        "brand": "eBay",
+        "latin": "eBay",
         "katakana": "イーベイ"
     },
     {
-        "brand": "Alibaba",
+        "latin": "Alibaba",
         "katakana": "アリババ"
     },
     {
-        "brand": "Baidu",
+        "latin": "Baidu",
         "katakana": "バイドゥ"
     },
     {
-        "brand": "WeChat",
+        "latin": "WeChat",
         "katakana": "ウィーチャット"
     },
     {
-        "brand": "Slack",
+        "latin": "Slack",
         "katakana": "スラック"
     },
     {
-        "brand": "Skype",
+        "latin": "Skype",
         "katakana": "スカイプ"
     },
     {
-        "brand": "Gmail",
+        "latin": "Gmail",
         "katakana": "ジーメール"
     },
     {
-        "brand": "Yahoo",
+        "latin": "Yahoo",
         "katakana": "ヤフー"
     },
     {
-        "brand": "Firefox",
+        "latin": "Firefox",
         "katakana": "ファイアフォックス"
     },
     {
-        "brand": "Chrome",
+        "latin": "Chrome",
         "katakana": "クローム"
     },
     {
-        "brand": "Safari",
+        "latin": "Safari",
         "katakana": "サファリ"
     },
     {
-        "brand": "Mercedes",
+        "latin": "Mercedes",
         "katakana": "メルセデス"
     },
     {
-        "brand": "Audi",
+        "latin": "Audi",
         "katakana": "アウディ"
     },
     {
-        "brand": "Ford",
+        "latin": "Ford",
         "katakana": "フォード"
     },
     {
-        "brand": "Ferrari",
+        "latin": "Ferrari",
         "katakana": "フェラーリ"
     },
     {
-        "brand": "Porsche",
+        "latin": "Porsche",
         "katakana": "ポルシェ"
     },
     {
-        "brand": "Jaguar",
+        "latin": "Jaguar",
         "katakana": "ジャガー"
     },
     {
-        "brand": "Bentley",
+        "latin": "Bentley",
         "katakana": "ベントレー"
     },
     {
-        "brand": "Maserati",
+        "latin": "Maserati",
         "katakana": "マセラティ"
     },
     {
-        "brand": "Bugatti",
+        "latin": "Bugatti",
         "katakana": "ブガッティ"
     },
     {
-        "brand": "Hyundai",
+        "latin": "Hyundai",
         "katakana": "ヒュンダイ"
     },
     {
-        "brand": "Nissan",
+        "latin": "Nissan",
         "katakana": "ニッサン"
     },
     {
-        "brand": "Daihatsu",
+        "latin": "Daihatsu",
         "katakana": "ダイハツ"
     },
     {
-        "brand": "Peugeot",
+        "latin": "Peugeot",
         "katakana": "プジョー"
     },
     {
-        "brand": "Renault",
+        "latin": "Renault",
         "katakana": "ルノー"
     },
     {
-        "brand": "Lancia",
+        "latin": "Lancia",
         "katakana": "ランチア"
     },
     {
-        "brand": "Škoda",
+        "latin": "Škoda",
         "katakana": "シュコダ"
     },
     {
-        "brand": "Holden",
+        "latin": "Holden",
         "katakana": "ホールデン"
     },
     {
-        "brand": "Dior",
+        "latin": "Dior",
         "katakana": "ディオール"
     },
     {
-        "brand": "Versace",
+        "latin": "Versace",
         "katakana": "ヴェルサーチ"
     },
     {
-        "brand": "Armani",
+        "latin": "Armani",
         "katakana": "アルマーニ"
     }
 ]

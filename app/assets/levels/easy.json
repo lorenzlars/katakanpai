@@ -1,154 +1,154 @@
 [
     {
-        "brand": "Zoom",
+        "latin": "Zoom",
         "katakana": "ズーム"
     },
     {
-        "brand": "Pepsi",
+        "latin": "Pepsi",
         "katakana": "ペプシ"
     },
     {
-        "brand": "Kia",
+        "latin": "Kia",
         "katakana": "キア"
     },
     {
-        "brand": "Volvo",
+        "latin": "Volvo",
         "katakana": "ボルボ"
     },
     {
-        "brand": "Saab",
+        "latin": "Saab",
         "katakana": "サーブ"
     },
     {
-        "brand": "Fiat",
+        "latin": "Fiat",
         "katakana": "フィアット"
     },
     {
-        "brand": "Opel",
+        "latin": "Opel",
         "katakana": "オペル"
     },
     {
-        "brand": "Zara",
+        "latin": "Zara",
         "katakana": "ザラ"
     },
     {
-        "brand": "Gap",
+        "latin": "Gap",
         "katakana": "ギャップ"
     },
     {
-        "brand": "Mars",
+        "latin": "Mars",
         "katakana": "マーズ"
     },
     {
-        "brand": "Shell",
+        "latin": "Shell",
         "katakana": "シェル"
     },
     {
-        "brand": "Dell",
+        "latin": "Dell",
         "katakana": "デル"
     },
     {
-        "brand": "Intel",
+        "latin": "Intel",
         "katakana": "インテル"
     },
     {
-        "brand": "Kodak",
+        "latin": "Kodak",
         "katakana": "コダック"
     },
     {
-        "brand": "Polo",
+        "latin": "Polo",
         "katakana": "ポロ"
     },
     {
-        "brand": "Lego",
+        "latin": "Lego",
         "katakana": "レゴ"
     },
     {
-        "brand": "Ikea",
+        "latin": "Ikea",
         "katakana": "イケア"
     },
     {
-        "brand": "Visa",
+        "latin": "Visa",
         "katakana": "ビザ"
     },
     {
-        "brand": "Axa",
+        "latin": "Axa",
         "katakana": "アクサ"
     },
     {
-        "brand": "Tesla",
+        "latin": "Tesla",
         "katakana": "テスラ"
     },
     {
-        "brand": "Nike",
+        "latin": "Nike",
         "katakana": "ナイキ"
     },
     {
-        "brand": "Sony",
+        "latin": "Sony",
         "katakana": "ソニー"
     },
     {
-        "brand": "Opera",
+        "latin": "Opera",
         "katakana": "オペラ"
     },
     {
-        "brand": "Domino's",
+        "latin": "Domino's",
         "katakana": "ドミノ"
     },
     {
-        "brand": "Toyota",
+        "latin": "Toyota",
         "katakana": "トヨタ"
     },
     {
-        "brand": "Honda",
+        "latin": "Honda",
         "katakana": "ホンダ"
     },
     {
-        "brand": "Mazda",
+        "latin": "Mazda",
         "katakana": "マツダ"
     },
     {
-        "brand": "Lexus",
+        "latin": "Lexus",
         "katakana": "レクサス"
     },
     {
-        "brand": "Acura",
+        "latin": "Acura",
         "katakana": "アキュラ"
     },
     {
-        "brand": "Subaru",
+        "latin": "Subaru",
         "katakana": "スバル"
     },
     {
-        "brand": "Suzuki",
+        "latin": "Suzuki",
         "katakana": "スズキ"
     },
     {
-        "brand": "Isuzu",
+        "latin": "Isuzu",
         "katakana": "イスズ"
     },
     {
-        "brand": "SEAT",
+        "latin": "SEAT",
         "katakana": "セアト"
     },
     {
-        "brand": "Chanel",
+        "latin": "Chanel",
         "katakana": "シャネル"
     },
     {
-        "brand": "Gucci",
+        "latin": "Gucci",
         "katakana": "グッチ"
     },
     {
-        "brand": "Prada",
+        "latin": "Prada",
         "katakana": "プラダ"
     },
     {
-        "brand": "Hermès",
+        "latin": "Hermès",
         "katakana": "エルメス"
     },
     {
-        "brand": "Uniqlo",
+        "latin": "Uniqlo",
         "katakana": "ユニクロ"
     }
 ]
