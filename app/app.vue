@@ -5,22 +5,7 @@
         Kata<span class="font-bold">kanpai</span>
       </h1>
 
-      <div class="h-16">
-        <HyperText :text="activeWord?.katakana ?? ' '" class="text-4xl font-bold" :duration="800"
-          :animate-on-load="true" />
-      </div>
-
-      <div
-        class="h-30 w-full flex flex-col justify-center items-center rounded-lg overflow-hidden bg-elevated/50 ring ring-default divide-y divide-default">
-        <p v-if="showAnswer" class="text-3xl">{{ activeWord?.brand }}</p>
-        <p v-if="(showAnswer || fluffy) && romaji" class="text-gray-400"><em>{{ romaji }}</em></p>
-      </div>
-
-      <UProgress v-model="progress" />
-
-      <UButton @click="startGame" size="xl" class="w-full justify-center" variant="outline">
-        {{ isActive ? 'Reveal' : 'Start' }}
-      </UButton>
+      <GameControls />
 
       <SettingsDialog />
 
@@ -28,60 +13,3 @@
     </div>
   </UApp>
 </template>
-
-<script setup lang="ts">
-import { toRomaji } from 'wanakana'
-import type { Level } from './types';
-
-const { interval, level, fluffy } = storeToRefs(useSettingsStore())
-const showAnswer = shallowRef(false)
-const activeWord = shallowRef<{ brand: string; katakana: string }>()
-const progress = shallowRef(0)
-const fullRomaji = computed(() => toRomaji(activeWord.value?.katakana))
-const romaji = computed(() => {
-  if (!fullRomaji.value || !isActive.value) return fullRomaji.value
-
-  const totalChars = fullRomaji.value.length
-  const progressRatio = (interval.value - remaining.value) / interval.value
-  const charsToShow = Math.floor(progressRatio * totalChars)
-
-  return fullRomaji.value.slice(0, charsToShow)
-})
-
-const options = shallowRef([])
-
-const levels: Record<string, Function> = import.meta.glob('~/assets/levels/*.json')
-
-watch(level, async (newLevel: Level) => {
-  const resolver = levels[`/assets/levels/${newLevel}.json`]
-
-  if (resolver) {
-    const brands = await resolver()
-
-    options.value = brands.default
-  }
-
-}, { immediate: true })
-
-const { isActive, remaining, start, stop } = useCountdown(interval, {
-  onComplete() {
-    showAnswer.value = true
-  },
-  onTick() {
-    progress.value = 100 / interval.value * remaining.value
-  },
-  interval: 1_000 / TICKS_PER_SECOND
-})
-
-function startGame() {
-  if (isActive.value) {
-    stop()
-    showAnswer.value = true
-  } else {
-    showAnswer.value = false
-    activeWord.value = options.value[Math.floor(Math.random() * options.value.length)]
-
-    start()
-  }
-}
-</script>
