@@ -19,8 +19,8 @@ The name "Katakanpai" is a play on "katakana" (カタカナ) and "kanpai" (乾�
 
 ### Prerequisites
 
-- Node.js (v18 or higher)
-- pnpm (recommended)
+- Node.js (22.18.0)
+- pnpm (10.14.0)
 
 ### Installation
 
