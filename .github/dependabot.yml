@@ -1,0 +1,14 @@
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    target-branch: main
+    versioning-strategy: increase
+    directory: "/"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore(pnpm):"
+    assignees:
+      - "lorenzlars"
+    schedule:
+      interval: "daily"
