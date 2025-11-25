@@ -1,11 +1,12 @@
+import { useStorage } from '@vueuse/core'
 import type { Brand, Level } from "~/types"
 
 const levels: Record<string, Function> = import.meta.glob('~/assets/levels/*.json')
 
 export const useSettingsStore = defineStore('settings', () => {
-    const seconds = shallowRef(15)
-    const level = shallowRef<Level>('easy')
-    const fluffy = shallowRef(false)
+    const seconds = useStorage('seconds', 15)
+    const level = useStorage<Level>('level', 'easy')
+    const fluffy = useStorage('fluffy', false)
     const brands = shallowRef<Brand[]>([])
     const loading = shallowRef(false)
 
