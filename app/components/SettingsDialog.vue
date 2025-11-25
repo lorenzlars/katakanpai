@@ -9,6 +9,18 @@
 
     <template #body>
       <div class="flex flex-col gap-6">
+        <UFormField
+          :label="$t('settings.language')"
+          name="locale"
+          class="w-full"
+        >
+          <USelect
+            v-model="locale"
+            :items="locales"
+            class="w-full"
+          />
+        </UFormField>
+
         <div class="flex gap-6">
           <UFormField
             :label="$t('settings.difficulty')"
@@ -34,18 +46,6 @@
             />
           </UFormField>
         </div>
-
-        <UFormField
-          :label="$t('settings.language')"
-          name="locale"
-          class="w-full"
-        >
-          <USelect
-            v-model="locale"
-            :items="locales"
-            class="w-full"
-          />
-        </UFormField>
 
         <UFormField
           name="fluffy"
