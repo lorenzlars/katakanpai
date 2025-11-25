@@ -19,6 +19,7 @@
     size="xl"
     class="w-full justify-center"
     variant="outline"
+    :loading
     @click="toggleGameState"
   >
     {{ isActive ? $t('game.reveal') : $t('game.start') }}
@@ -26,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-const { seconds, fluffy, brands } = storeToRefs(useSettingsStore())
+const { seconds, fluffy, brands, loading } = storeToRefs(useSettingsStore())
 const stateStore = useStateStore()
 const { activeBrand, showAnswer, isActive, progressPtc } = storeToRefs(stateStore)
 

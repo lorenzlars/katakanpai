@@ -24,6 +24,7 @@ export const useStateStore = defineStore('state', () => {
   function stop() {
     isActive.value = false
     showAnswer.value = true
+
     stopInterval()
   }
 
@@ -48,6 +49,7 @@ export const useStateStore = defineStore('state', () => {
   function stopInterval() {
     if (interval.value) {
       clearInterval(interval.value)
+
       interval.value = null
     }
   }

@@ -30,6 +30,7 @@
           >
             <USelect
               v-model="level"
+              :loading
               :items="levels"
               class="w-full"
             />
@@ -65,7 +66,7 @@
 <script lang="ts" setup>
 import type { Level } from '~/types'
 
-const { seconds, level, fluffy } = storeToRefs(useSettingsStore())
+const { seconds, level, fluffy, loading } = storeToRefs(useSettingsStore())
 const { t, locale, setLocale, availableLocales } = useI18n()
 
 const levels = computed(() => [

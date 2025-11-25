@@ -28,5 +28,5 @@ export const useSettingsStore = defineStore('settings', () => {
     loading.value = false
   }, { immediate: true })
 
-  return { seconds, level, fluffy, brands }
+  return { seconds, level, fluffy, brands, loading }
 })
