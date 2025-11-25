@@ -13,7 +13,7 @@ import type { Brand } from '~/types';
 const props = defineProps<{
     show: boolean
     fluffy: boolean
-    progress: number // TODO: Should be remaining progress or something like that
+    progress: number
     brand?: Brand
 }>()
 
@@ -26,7 +26,7 @@ const visibleRomaji = computed(() => {
     }
 
     const totalChars = fullRomaji.value.length
-    const charsToShow = Math.floor(((100 - props.progress) / 100) * totalChars)
+    const charsToShow = Math.floor((props.progress / 100) * totalChars)
 
     return fullRomaji.value.slice(0, charsToShow)
 })

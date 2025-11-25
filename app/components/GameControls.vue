@@ -1,41 +1,30 @@
 <template>
-    <HyperText :text="activeWord?.katakana ?? ' '" class="h-16 text-4xl font-bold" :duration="800"
+    <HyperText :text="activeBrand?.katakana ?? ' '" class="h-16 text-4xl font-bold" :duration="800"
         :animate-on-load="true" />
 
-    <AnswerDisplay :show="showAnswer" :fluffy :brand="activeWord" :progress />
+    <AnswerDisplay :show="showAnswer" :fluffy :brand="activeBrand" :progress="progressPtc" />
 
-    <UProgress v-model="progress" />
+    <UProgress v-model="progressPtc" />
 
-    <UButton @click="startGame" size="xl" class="w-full justify-center" variant="outline">
+    <UButton @click="toggleGameState" size="xl" class="w-full justify-center" variant="outline">
         {{ isActive ? 'Reveal' : 'Start' }}
     </UButton>
 </template>
 
 <script setup lang="ts">
-const { interval, fluffy, brands } = storeToRefs(useSettingsStore())
-const { activeWord, showAnswer } = storeToRefs(useStateStore())
+const { seconds, fluffy, brands } = storeToRefs(useSettingsStore())
+const stateStore = useStateStore()
+const { activeBrand, showAnswer, isActive, progressPtc } = storeToRefs(stateStore)
 
-const progress = shallowRef(0)
-
-const { isActive, remaining, start, stop } = useCountdown(interval, {
-    onComplete() {
-        showAnswer.value = true
-    },
-    onTick() {
-        progress.value = 100 / interval.value * remaining.value
-    },
-    interval: 1_000 / TICKS_PER_SECOND
-})
-
-function startGame() {
+function toggleGameState() {
     if (isActive.value) {
-        stop()
-        showAnswer.value = true
+        stateStore.stop()
     } else {
-        showAnswer.value = false
-        activeWord.value = brands.value[Math.floor(Math.random() * brands.value.length)]
+        const brand = brands.value[Math.floor(Math.random() * brands.value.length)]
 
-        start()
+        if (brand) {
+            stateStore.start(brand, seconds.value)
+        }
     }
 }
 </script>
