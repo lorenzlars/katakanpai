@@ -2,7 +2,7 @@
     <div
         class="h-30 w-full flex flex-col justify-center items-center rounded-lg overflow-hidden bg-elevated/50 ring ring-default divide-y divide-default">
         <p v-if="show" class="text-3xl">{{ brand?.latin }}</p>
-        <p v-if="show || fluffy" class="text-gray-400"><em>{{ visibleRomaji }}</em></p>
+        <p class="text-gray-400"><em>{{ visibleRomaji }}</em></p>
     </div>
 </template>
 
@@ -18,16 +18,18 @@ const props = defineProps<{
 }>()
 
 const fullRomaji = computed(() => toRomaji(props.brand?.katakana))
-
-// TODO: Only compute this in fluffy mode
 const visibleRomaji = computed(() => {
     if (props.show) {
         return fullRomaji.value
     }
 
-    const totalChars = fullRomaji.value.length
-    const charsToShow = Math.floor((props.progress / 100) * totalChars)
+    if (props.fluffy) {
+        const totalChars = fullRomaji.value.length
+        const charsToShow = Math.floor((props.progress / 100) * totalChars)
 
-    return fullRomaji.value.slice(0, charsToShow)
+        return fullRomaji.value.slice(0, charsToShow)
+    }
+
+    return undefined
 })
 </script>
