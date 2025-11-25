@@ -10,7 +10,7 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
-  modules: ['@vueuse/nuxt', '@nuxt/ui', '@pinia/nuxt'],
+  modules: ['@nuxt/eslint', '@vueuse/nuxt', '@nuxt/ui', '@pinia/nuxt'],
   app: {
     head: {
       title: 'Katakanpai',
@@ -18,5 +18,15 @@ export default defineNuxtConfig({
         { name: 'description', content: 'A fun drinking game where you guess brand names from katakana characters. Test your Japanese reading skills and enjoy with friends!' }
       ]
     }
-  }
+  },
+  typescript: {
+    typeCheck: true,
+    strict: true,
+    shim: true,
+  },
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+  },
 })

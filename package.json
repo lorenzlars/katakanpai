@@ -21,7 +21,11 @@
     "wanakana": "^5.3.1"
   },
   "devDependencies": {
+    "@nuxt/eslint": "^1.10.0",
     "@tailwindcss/vite": "^4.1.16",
-    "tailwindcss": "^4.1.16"
+    "eslint": "^9.39.1",
+    "tailwindcss": "^4.1.16",
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.1.5"
   }
 }
