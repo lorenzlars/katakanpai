@@ -45,6 +45,8 @@
               v-model="seconds"
               type="number"
               class="w-full"
+              min="1"
+              max="120"
             />
           </UFormField>
         </div>
