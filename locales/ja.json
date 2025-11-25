@@ -1,15 +1,15 @@
 {
   "app.title.1": "カタ",
   "app.title.2": "カンパイ",
-  "app.meta.description": "カタカナ文字からブランド名を推測する楽しい飲みゲーム。日本語の読解力を試して、友達と楽しもう！",
-  "game.reveal": "公開",
+  "app.meta.description": "カタカナもじからブランドめいをすいそくするたのしいのみゲーム。にほんごのどくかいりょくをためして、ともだちとたのしもう！",
+  "game.reveal": "こうかい",
   "game.start": "スタート",
-  "settings.title": "設定",
-  "settings.difficulty": "難易度",
-  "settings.secondsToGuess": "推測する秒数",
+  "settings.title": "せってい",
+  "settings.difficulty": "なんいど",
+  "settings.secondsToGuess": "すいそくするびょうすう",
   "settings.fluffyMode": "ふわふわモード",
-  "settings.language": "言語",
-  "settings.levels.easy": "簡単",
-  "settings.levels.normal": "普通",
-  "settings.levels.hard": "難しい"
+  "settings.language": "げんご",
+  "settings.levels.easy": "かんたん",
+  "settings.levels.normal": "ふつう",
+  "settings.levels.hard": "むずかしい"
 }
