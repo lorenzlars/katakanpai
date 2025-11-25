@@ -75,7 +75,7 @@ const levels = computed(() => [
 ])
 
 const locales = computed(() => availableLocales.map(code => ({
-  label: new Intl.DisplayNames([locale.value], { type: 'language' }).of(code),
+  label: t(`settings.locales.${code}`),
   value: code,
 })))
 </script>
