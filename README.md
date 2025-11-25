@@ -1,4 +1,4 @@
-# 🍻 Kata**kanpai**
+# Kata**kanpai**
 
 A fun drinking game to help beginner Japanese learners practice reading katakana by guessing famous brand names written in Japanese characters.
 
@@ -10,17 +10,17 @@ The name "Katakanpai" is a play on "katakana" (カタカナ) and "kanpai" (乾�
 
 ## Features
 
-- 🎯 Multiple difficulty levels (easy, normal, hard)
-- ⏱️ Timed challenges with progressive hints
-- 🎨 Clean, modern UI built with Nuxt and Tailwind
-- 🌸 Perfect for Japanese language learners
+-   🎯 Multiple difficulty levels (easy, normal, hard)
+-   ⏱️ Timed challenges with progressive hints
+-   🎨 Clean, modern UI built with Nuxt and Tailwind
+-   🌸 Perfect for Japanese language learners
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js (22.18.0)
-- pnpm (10.14.0)
+-   Node.js (22.18.0)
+-   pnpm (10.14.0)
 
 ### Installation
 

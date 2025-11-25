@@ -10,10 +10,9 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Katakanpai',
-      meta: [
-        { name: 'description', content: 'A fun drinking game where you guess brand names from katakana characters. Test your Japanese reading skills and enjoy with friends!' },
-      ],
+      htmlAttrs: {
+        lang: 'en',
+      },
     },
   },
 
@@ -46,7 +45,7 @@ export default defineNuxtConfig({
       { code: 'ja', file: 'ja-JP.json' },
     ],
     detectBrowserLanguage: {
-      useCookie: false,
+      useCookie: true,
     },
     defaultLocale: 'en',
   },

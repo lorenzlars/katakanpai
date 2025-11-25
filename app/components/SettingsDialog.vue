@@ -15,9 +15,10 @@
           class="w-full"
         >
           <USelect
-            v-model="locale"
+            :model-value="locale"
             :items="locales"
             class="w-full"
+            @update:model-value="setLocale"
           />
         </UFormField>
 
@@ -64,7 +65,8 @@
 <script lang="ts" setup>
 import type { Level } from '~/types'
 
-const { t, locale } = useI18n()
+const { seconds, level, fluffy } = storeToRefs(useSettingsStore())
+const { t, locale, setLocale, availableLocales } = useI18n()
 
 const levels = computed(() => [
   { label: t('settings.levels.easy'), value: 'easy' as Level },
@@ -72,10 +74,8 @@ const levels = computed(() => [
   { label: t('settings.levels.hard'), value: 'hard' as Level },
 ])
 
-const locales = computed(() => [
-  { label: new Intl.DisplayNames([locale.value], { type: 'language' }).of('en'), value: 'en' },
-  { label: new Intl.DisplayNames([locale.value], { type: 'language' }).of('ja'), value: 'ja' },
-])
-
-const { seconds, level, fluffy } = storeToRefs(useSettingsStore())
+const locales = computed(() => availableLocales.map(code => ({
+  label: new Intl.DisplayNames([locale.value], { type: 'language' }).of(code),
+  value: code,
+})))
 </script>

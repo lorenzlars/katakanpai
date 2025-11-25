@@ -16,3 +16,20 @@
     </div>
   </UApp>
 </template>
+
+<script setup lang="ts">
+const { t, locale } = useI18n()
+
+useHead({
+  title: () => `${t('app.title.1')}${t('app.title.2')}`,
+  htmlAttrs: {
+    lang: () => locale.value,
+  },
+  meta: [
+    {
+      name: 'description',
+      content: () => t('app.meta.description'),
+    },
+  ],
+})
+</script>
