@@ -1,0 +1,14 @@
+{
+  "app.title.1": "Kata",
+  "app.title.2": "kanpai",
+  "game.reveal": "Reveal",
+  "game.start": "Start",
+  "settings.title": "Settings",
+  "settings.difficulty": "Difficulty",
+  "settings.secondsToGuess": "Seconds to guess",
+  "settings.fluffyMode": "Fluffy mode",
+  "settings.language": "Language",
+  "settings.levels.easy": "Easy",
+  "settings.levels.normal": "Normal",
+  "settings.levels.hard": "Hard"
+}
