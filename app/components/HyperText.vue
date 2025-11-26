@@ -31,7 +31,7 @@ const props = withDefaults(
   },
 )
 
-const alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+const alphabets = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン'
 const displayText = ref<(string | undefined)[]>(props.text.split(''))
 const iterations = ref(0)
 

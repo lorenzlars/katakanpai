@@ -9,8 +9,8 @@
   "settings.secondsToGuess": "すいそくするびょうすう",
   "settings.fluffyMode": "ふわふわモード",
   "settings.language": "げんご",
-  "settings.locales.en": "エゴ",
-  "settings.locales.ja": "にほんご",
+  "settings.locales.en": "English",
+  "settings.locales.ja": "日本語",
   "settings.levels.easy": "かんたん",
   "settings.levels.normal": "ふつう",
   "settings.levels.hard": "むずかしい"
