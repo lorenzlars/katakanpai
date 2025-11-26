@@ -43,6 +43,7 @@ export default defineNuxtConfig({
     locales: [
       { code: 'en', file: 'en-GB.json' },
       { code: 'ja', file: 'ja-JP.json' },
+      { code: 'de', file: 'de-DE.json' },
     ],
     detectBrowserLanguage: {
       useCookie: true,

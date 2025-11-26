@@ -1,0 +1,18 @@
+{
+  "app.title.1": "Kata",
+  "app.title.2": "kanpai",
+  "app.meta.description": "Ein lustiges Trinkspiel, bei dem du Markennamen aus Katakana-Zeichen errätst. Teste deine japanischen Lesefähigkeiten und hab Spaß mit Freunden!",
+  "game.reveal": "Aufdecken",
+  "game.start": "Start",
+  "settings.title": "Einstellungen",
+  "settings.difficulty": "Schwierigkeit",
+  "settings.secondsToGuess": "Sekunden zum Raten",
+  "settings.fluffyMode": "Flauschiger Modus",
+  "settings.language": "Sprache",
+  "settings.locales.en": "English",
+  "settings.locales.ja": "日本語",
+  "settings.locales.de": "Deutsch",
+  "settings.levels.easy": "Einfach",
+  "settings.levels.normal": "Normal",
+  "settings.levels.hard": "Schwer"
+}
