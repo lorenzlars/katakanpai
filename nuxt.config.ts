@@ -2,7 +2,14 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
 
-  modules: ['@nuxt/eslint', '@vueuse/nuxt', '@nuxt/ui', '@pinia/nuxt', '@nuxtjs/i18n'],
+  modules: [
+    '@nuxt/eslint',
+    '@vueuse/nuxt',
+    '@nuxt/ui',
+    '@pinia/nuxt',
+    '@nuxtjs/i18n',
+    '@nuxt/test-utils/module',
+  ],
 
   ssr: false,
 
@@ -17,6 +24,12 @@ export default defineNuxtConfig({
   },
 
   css: ['./app/assets/css/main.css'],
+
+  runtimeConfig: {
+    public: {
+      mode: process.env.MODE,
+    },
+  },
 
   compatibilityDate: '2025-07-15',
 

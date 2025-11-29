@@ -5,6 +5,7 @@
     <p
       v-if="show"
       class="text-3xl"
+      data-testid="latin"
     >
       {{ brand?.latin }}
     </p>
