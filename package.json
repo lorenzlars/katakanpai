@@ -30,7 +30,7 @@
     "@playwright/test": "^1.62.0",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^26.1.2",
-    "@vue/test-utils": "^2.4.6",
+    "@vue/test-utils": "^2.4.11",
     "dotenv": "^17.4.2",
     "eslint": "^9.39.1",
     "happy-dom": "^20.11.1",
