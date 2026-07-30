@@ -37,7 +37,7 @@
     "playwright-core": "^1.62.0",
     "start-server-and-test": "^3.0.11",
     "std-env": "^4.2.0",
-    "tailwindcss": "^4.1.17",
+    "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3",
     "vitest": "^4.1.10",
     "vue-tsc": "^3.3.8"
