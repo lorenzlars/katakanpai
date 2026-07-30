@@ -25,7 +25,7 @@
     "wanakana": "^5.3.1"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.10.0",
+    "@nuxt/eslint": "^1.16.0",
     "@nuxt/test-utils": "^4.1.0",
     "@playwright/test": "^1.62.0",
     "@tailwindcss/vite": "^4.3.3",
