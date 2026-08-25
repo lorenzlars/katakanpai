@@ -13,7 +13,7 @@
     "test:e2e:gen": "start-server-and-test 'MODE=test pnpm run dev' 3000 'playwright codegen http://localhost:3000/'"
   },
   "dependencies": {
-    "@nuxt/ui": "^4.10.0",
+    "@nuxt/ui": "^4.11.0",
     "@nuxtjs/i18n": "^10.6.0",
     "@pinia/nuxt": "^1.0.2",
     "@vueuse/core": "^14.4.0",
