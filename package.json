@@ -21,7 +21,7 @@
     "motion-v": "^2.4.0",
     "nuxt": "^4.5.2",
     "vue": "^3.5.41",
-    "vue-router": "^5.2.0",
+    "vue-router": "^5.3.0",
     "wanakana": "^5.3.1"
   },
   "devDependencies": {
