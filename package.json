@@ -35,7 +35,7 @@
     "eslint": "^10.12.0",
     "happy-dom": "^20.14.5",
     "playwright-core": "^1.63.0",
-    "start-server-and-test": "^3.0.12",
+    "start-server-and-test": "^3.0.13",
     "std-env": "^4.3.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3",
