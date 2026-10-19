@@ -44,7 +44,7 @@ importers:
         version: 1.17.0(@typescript-eslint/utils@8.66.0(eslint@10.12.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.44)(esbuild@0.28.2)(eslint@10.12.0(jiti@2.7.0)(supports-color@10.2.2))(magic-string@1.4.2)(magicast@0.5.4)(oxc-parser@0.141.0)(rolldown@1.2.12)(rollup@4.62.4)(srvx@1.0.5)(supports-color@10.2.2)(typescript@6.0.3)(unplugin@3.4.0(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.62.4)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0)))(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0))
       '@nuxt/test-utils':
         specifier: ^4.3.3
-        version: 4.3.3(@oxc-project/types@0.152.0)(@playwright/test@1.64.0)(@vue/test-utils@2.5.1(@vue/compiler-dom@3.5.44)(@vue/server-renderer@3.5.44)(vue@3.5.44(typescript@6.0.3)))(esbuild@0.28.2)(h3@1.15.11)(happy-dom@21.0.3)(magicast@0.5.4)(nuxt@4.6.1(e30530e7b85770ac1badf40dc2f0957a))(oxc-parser@0.141.0)(playwright-core@1.64.0)(rolldown@1.2.12)(rollup@4.62.4)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0))(vitest@5.0.5(@opentelemetry/api@1.9.0)(@types/node@26.6.5)(happy-dom@21.0.3)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0)))(vue@3.5.44(typescript@6.0.3))
+        version: 4.3.3(@oxc-project/types@0.152.0)(@playwright/test@1.64.0)(@vue/test-utils@2.5.1(@vue/compiler-dom@3.5.44)(@vue/server-renderer@3.5.44)(vue@3.5.44(typescript@6.0.3)))(esbuild@0.28.2)(h3@1.15.11)(happy-dom@21.0.3)(magicast@0.5.4)(nuxt@4.6.1(e30530e7b85770ac1badf40dc2f0957a))(oxc-parser@0.141.0)(playwright-core@1.64.1)(rolldown@1.2.12)(rollup@4.62.4)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0))(vitest@5.0.5(@opentelemetry/api@1.9.0)(@types/node@26.6.5)(happy-dom@21.0.3)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0)))(vue@3.5.44(typescript@6.0.3))
       '@playwright/test':
         specifier: ^1.64.0
         version: 1.64.0
@@ -67,8 +67,8 @@ importers:
         specifier: ^21.0.3
         version: 21.0.3
       playwright-core:
-        specifier: ^1.64.0
-        version: 1.64.0
+        specifier: ^1.64.1
+        version: 1.64.1
       start-server-and-test:
         specifier: ^3.0.13
         version: 3.0.13(supports-color@10.2.2)
@@ -5126,6 +5126,11 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
+  playwright-core@1.64.1:
+    resolution: {integrity: sha512-BC4s8y6SEVA6Q1rSxZTto8hI1KUI3xXlHGZgvGqP4IqPdI/a6FX9H29IDNz7vKo9l21b6LfYosScPL6M3xxyDQ==}
+    engines: {node: '>=20'}
+    hasBin: true
+
   playwright@1.64.0:
     resolution: {integrity: sha512-kVzTnYFYEyQ9RGzBjNCd2+yEqWmVbxl3AHPynv3qQ6JTjv4a+kwRcnqQwIpuP3NnrnIrE/Q6wWAIAvMfIE2/Yg==}
     engines: {node: '>=20'}
@@ -8162,7 +8167,7 @@ snapshots:
       rc9: 3.1.0
       std-env: 4.3.0
 
-  '@nuxt/test-utils@4.3.3(@oxc-project/types@0.152.0)(@playwright/test@1.64.0)(@vue/test-utils@2.5.1(@vue/compiler-dom@3.5.44)(@vue/server-renderer@3.5.44)(vue@3.5.44(typescript@6.0.3)))(esbuild@0.28.2)(h3@1.15.11)(happy-dom@21.0.3)(magicast@0.5.4)(nuxt@4.6.1(e30530e7b85770ac1badf40dc2f0957a))(oxc-parser@0.141.0)(playwright-core@1.64.0)(rolldown@1.2.12)(rollup@4.62.4)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0))(vitest@5.0.5(@opentelemetry/api@1.9.0)(@types/node@26.6.5)(happy-dom@21.0.3)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0)))(vue@3.5.44(typescript@6.0.3))':
+  '@nuxt/test-utils@4.3.3(@oxc-project/types@0.152.0)(@playwright/test@1.64.0)(@vue/test-utils@2.5.1(@vue/compiler-dom@3.5.44)(@vue/server-renderer@3.5.44)(vue@3.5.44(typescript@6.0.3)))(esbuild@0.28.2)(h3@1.15.11)(happy-dom@21.0.3)(magicast@0.5.4)(nuxt@4.6.1(e30530e7b85770ac1badf40dc2f0957a))(oxc-parser@0.141.0)(playwright-core@1.64.1)(rolldown@1.2.12)(rollup@4.62.4)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0))(vitest@5.0.5(@opentelemetry/api@1.9.0)(@types/node@26.6.5)(happy-dom@21.0.3)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0)))(vue@3.5.44(typescript@6.0.3))':
     dependencies:
       '@clack/prompts': 1.8.1
       '@nuxt/devtools-kit': 3.4.2(magic-string@1.4.2)(magicast@0.5.4)(oxc-parser@0.141.0)(rolldown@1.2.12)(unplugin@3.4.0(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.62.4)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0)))(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0))
@@ -8191,7 +8196,7 @@ snapshots:
       h3: 1.15.11
       happy-dom: 21.0.3
       nuxt: 4.6.1(e30530e7b85770ac1badf40dc2f0957a)
-      playwright-core: 1.64.0
+      playwright-core: 1.64.1
       vitest: 5.0.5(@opentelemetry/api@1.9.0)(@types/node@26.6.5)(happy-dom@21.0.3)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0))
     transitivePeerDependencies:
       - '@farmfe/core'
@@ -12333,6 +12338,8 @@ snapshots:
 
   playwright-core@1.64.0: {}
 
+  playwright-core@1.64.1: {}
+
   playwright@1.64.0:
     dependencies:
       playwright-core: 1.64.0
@@ -13600,7 +13607,7 @@ snapshots:
 
   vitest-environment-nuxt@2.0.0:
     dependencies:
-      '@nuxt/test-utils': 4.3.3(@oxc-project/types@0.152.0)(@playwright/test@1.64.0)(@vue/test-utils@2.5.1(@vue/compiler-dom@3.5.44)(@vue/server-renderer@3.5.44)(vue@3.5.44(typescript@6.0.3)))(esbuild@0.28.2)(h3@1.15.11)(happy-dom@21.0.3)(magicast@0.5.4)(nuxt@4.6.1(e30530e7b85770ac1badf40dc2f0957a))(oxc-parser@0.141.0)(playwright-core@1.64.0)(rolldown@1.2.12)(rollup@4.62.4)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0))(vitest@5.0.5(@opentelemetry/api@1.9.0)(@types/node@26.6.5)(happy-dom@21.0.3)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0)))(vue@3.5.44(typescript@6.0.3))
+      '@nuxt/test-utils': 4.3.3(@oxc-project/types@0.152.0)(@playwright/test@1.64.0)(@vue/test-utils@2.5.1(@vue/compiler-dom@3.5.44)(@vue/server-renderer@3.5.44)(vue@3.5.44(typescript@6.0.3)))(esbuild@0.28.2)(h3@1.15.11)(happy-dom@21.0.3)(magicast@0.5.4)(nuxt@4.6.1(e30530e7b85770ac1badf40dc2f0957a))(oxc-parser@0.141.0)(playwright-core@1.64.1)(rolldown@1.2.12)(rollup@4.62.4)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0))(vitest@5.0.5(@opentelemetry/api@1.9.0)(@types/node@26.6.5)(happy-dom@21.0.3)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0)))(vue@3.5.44(typescript@6.0.3))
 
   vitest@5.0.5(@opentelemetry/api@1.9.0)(@types/node@26.6.5)(happy-dom@21.0.3)(vite@8.3.3(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0)):
     dependencies:
