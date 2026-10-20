@@ -19,7 +19,7 @@
     "@vueuse/core": "^15.0.0",
     "@vueuse/nuxt": "^15.0.0",
     "motion-v": "^2.8.0",
-    "nuxt": "^4.6.1",
+    "nuxt": "^4.6.2",
     "vue": "^3.5.44",
     "vue-router": "^5.4.0",
     "wanakana": "^5.3.1"
